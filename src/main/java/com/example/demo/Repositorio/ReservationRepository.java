@@ -47,7 +47,7 @@ public class ReservationRepository {
     }
     
     public List<Reservation> informePeriodoTiempoReservas (Date a, Date b){
-        return extensionesCrud.findAllByStartDateAferAndStartDateBefore(a, b);
+        return extensionesCrud.findAllByStartDateAfterAndStartDateBefore(a, b);
     }
     
     public List<CountClient> getTopClient () {
