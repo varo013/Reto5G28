@@ -70,7 +70,7 @@ public class ReservationController {
         return reservationService.getTopClients();
     }
     
-    @GetMapping("/report-clients/{datOne}/ {dateTwo}")
+    @GetMapping("/report-dates/{dateOne}/{dateTwo}")
     public List<Reservation> getReservationsReportDates(@PathVariable("dateOne") String dateOne, @PathVariable("dateTwo") String dateTwo){
         return reservationService.informePeriodoTiempoReservas(dateOne, dateOne);
     }
