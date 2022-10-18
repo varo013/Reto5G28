@@ -111,6 +111,10 @@ public class ReservationService {
      public List<CountClient> getTopClients(){
          return reservationRepository.getTopClient();
      }
+
+    public Status getReservationStatusReport() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     
 }

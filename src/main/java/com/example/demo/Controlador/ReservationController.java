@@ -77,7 +77,7 @@ public class ReservationController {
     
     @GetMapping("/report-status")
     public Status getReservationsSatutsReport(){
-        return reservationService.GetReservationStatusReport();
+        return reservationService.getReservationStatusReport();
     }
     
     
