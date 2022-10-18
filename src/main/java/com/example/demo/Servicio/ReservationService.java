@@ -82,7 +82,7 @@ public class ReservationService {
      
      ////Reto5 ////
      
-     public Status GetReservationStatusReport()  {
+     public Status getReservationStatusReport()  {
          List<Reservation>completed = reservationRepository.getReservationByStatus("completed");
          List<Reservation>cancelled = reservationRepository.getReservationByStatus("cancelled");
          return new Status (completed.size(),cancelled.size());
@@ -110,11 +110,5 @@ public class ReservationService {
      
      public List<CountClient> getTopClients(){
          return reservationRepository.getTopClient();
-     }
-
-    public Status getReservationStatusReport() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
-    
+     } 
 }
